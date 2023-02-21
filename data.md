@@ -1,4 +1,4 @@
-# Output
+# MissionWired exercise output
 
 Here are links to output CSV files:
 
