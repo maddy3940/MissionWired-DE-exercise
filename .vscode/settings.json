@@ -1,0 +1,5 @@
+{
+  "remote.extensionKind": {
+    "*": [ "ms-vscode-remote.remote-containers" ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Python",
+  "image": "python:3",
+  "extensions": [
+    "ms-python.python"
+  ],
+  "command": "python script.py"
+}
