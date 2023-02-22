@@ -55,6 +55,7 @@ def main():
 
     cons_subscription_notsubchap1 = subtract_df(cons_subscription_notchap1,cons_subscription_commonchap,on='cons_email_id').reset_index().drop(['level_0'],axis=1)
 
+    # Creatting final df of email ids who are not subscribed to chapter 1
     emails_not_sub_chap1_final = pd.concat([cons_subscription_notsubchap1,cons_subscription_chap1_notsub],axis=0)
     emails_not_sub_chap1_final = emails_not_sub_chap1_final.drop_duplicates(subset=['cons_email_id'])
 
@@ -66,9 +67,10 @@ def main():
     # Combining people who have subscribed to chapter 1
     emails_sub_chap1_final = pd.concat([email_in_primary_sub_chap1,cons_subscription_chap1_sub],axis=0).reset_index().drop(['level_0'], axis=1)
 
+    # Combining emails that are not subscribed to chapter 1 and emails that are subscribed to chapter 1
     peoples_final = pd.concat([emails_sub_chap1_final,emails_not_sub_chap1_final],axis=0).reset_index().drop(['level_0'], axis=1)
 
-    # Joining the primary constitunet_email dataframe on cons_email_id 
+    # Joining the primary constitunet_email dataframe on cons_email_id to only get primary email id in the output
     people_final_primary_email = cons_email_primary.merge(peoples_final,on='cons_email_id').drop(['index','is_primary','chapter_id'],axis=1)
 
     # Joining with constituent information dataframe to get the other columns
