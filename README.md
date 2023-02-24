@@ -62,7 +62,10 @@ python script.py
 ### Steps to run Script on Github Codespace
 - This repo is configured to run on Github Codespace. Anyone will be able to run the script on Github codespace
 - Click on Code button on this repo and hit codespaces as shown below
-![image](https://user-images.githubusercontent.com/44323045/220700911-a19f2a76-21c1-4580-97f3-e9d2242a87e3.png)
+
+![image](https://user-images.githubusercontent.com/44323045/221064026-9d313abc-f8cb-462e-93fb-3ccefed79040.png)
+
+
 - Codespace will spin up a VM with all the dependencies required to run the script.py file in this repo
 - Once the VS code window opens up select the script.py file and hit run. You should be able to play around with the code using browser itself
 ![image](https://user-images.githubusercontent.com/44323045/220702255-17c02b84-704c-4b68-829d-777079794a27.png)
