@@ -60,7 +60,7 @@ pip install -r requirements.txt
 python script.py
 ```
 ### Steps to run Script on Github Codespace
-- This repo is configured to run on Github Codespace. Anyone will be able to run the script on Github codespace once I have added them as collaborators to this repo
+- This repo is configured to run on Github Codespace. Anyone will be able to run the script on Github codespace
 - Click on Code button on this repo and hit codespaces as shown below
 ![image](https://user-images.githubusercontent.com/44323045/220700911-a19f2a76-21c1-4580-97f3-e9d2242a87e3.png)
 - Codespace will spin up a VM with all the dependencies required to run the script.py file in this repo
