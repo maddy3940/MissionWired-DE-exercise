@@ -3,8 +3,8 @@ name: Python Script
 on:
   push:
     branches: [main]
-  schedule:
-    - cron: '0 0 * * 0' # Run every Sunday at midnight
+#   schedule:
+#     - cron: '0 0 * * 0' # Run every Sunday at midnight
 
 jobs:
   build:
